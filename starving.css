@@ -9,7 +9,7 @@
 .starving {
   height: 100vh;
   max-height: 620px;
-  background-image: url("/images/Group.svg");
+  background-image: url("images/Group.svg");
   background-size: cover; /* Чтобы фон заполнял весь блок */
 }
 
