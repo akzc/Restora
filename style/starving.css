@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.starving {
+  height: 100vh;
+  max-height: 620px;
+  background-image: url("../images/Group.svg");
+  background-size: cover; /* Чтобы фон заполнял весь блок */
+}
+
+.starving-bloc {
+  display: flex;
+}
+
+.starving-bloc-bloc_1 {
+  margin: 132px 22px 132px 220px;
+}
+
+.starving-bloc-bloc_1 h1 {
+  width: 856px;
+  font-size: 88px;
+  font-weight: bold;
+  color: white;
+}
+
+.starving-bloc-bloc_1 p {
+  color: #504f4f;
+  font-size: 22px;
+  font-weight: 400; /* Исправлено: убрал px, теперь работает */
+  line-height: 1.2; /* Добавил межстрочный интервал для красоты */
+}
+
+.starving-bloc-bloc_2 img {
+  margin-top: 182px;
+  width: 619px;
+  position: relative;
+  bottom: -23px;
+}
+
+.starving-address {
+  margin-top: 32px;
+
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.starving-address ul {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+  list-style: none; /* Исправлено: убрал черные точки списка */
+}
+
+.starving-address ul li {
+  display: flex;
+  gap: 8px;
+  margin: 24px;
+  text-align: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 10px 24px;
+}
+
+.starving_li_1 {
+  background-color: #f1722820;
+}
+
+.starving_li_1 img {
+  width: 23px;
+  height: 18px;
+}
+
+.starving_li_1 p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f17228;
+}
+
+/* Проверь, чтобы в HTML было именно такое написание (через RA) */
+.straving-address-input {
+  padding: 24px;
+}
+
+.address-input {
+  border-radius: 8px;
+  flex: 1;
+  display: flex;
+  background-color: #f5f5f5;
+  gap: 4px;
+  padding-block: 8px;
+}
+
+.address-input img {
+  width: 18px;
+  height: 34px;
+  margin-left: 16px;
+}
+
+.address-input input {
+  background-color: #f5f5f5;
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.straving-address-input {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.straving-address-input button {
+  cursor: pointer;
+  margin-left: 16px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  padding: 21px 48px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #ff7a7a;
+  background: #ff7a7a;
+  background: #ff7a7a;
+  background: #ff7a7a;
+  background: linear-gradient(
+    154deg,
+    rgba(255, 122, 122, 1) 0%,
+    rgba(251, 109, 73, 1) 40%,
+    rgba(246, 89, 0, 1) 100%
+  );
+  transition: 0.3s;
+}
+.straving-address-input button p {
+  color: white;
+}
+
+.straving-address-input button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 1280px) {
+  .starving-bloc-bloc_1 {
+    margin: 96px 24px 96px 96px;
+  }
+
+  .starving-bloc-bloc_1 h1 {
+    width: auto;
+    font-size: clamp(56px, 7vw, 88px);
+  }
+
+  .starving-bloc-bloc_2 img {
+    width: min(48vw, 560px);
+    margin-top: 140px;
+  }
+}
+
+@media (max-width: 992px) {
+  .starving {
+    height: auto;
+    max-height: none;
+    background-position: center;
+    padding: 32px 0 48px;
+  }
+
+  .starving-bloc {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .starving-bloc-bloc_1 {
+    margin: 24px 24px 0;
+  }
+
+  .starving-bloc-bloc_1 h1 {
+    width: 100%;
+    font-size: clamp(44px, 8vw, 68px);
+  }
+
+  .starving-bloc-bloc_1 p {
+    font-size: 18px;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .starving-bloc-bloc_2 img {
+    margin-top: 0;
+    width: min(70vw, 520px);
+    position: static;
+  }
+
+  .starving-address {
+    max-width: 720px;
+    margin-inline: auto;
+  }
+
+  .straving-address-input {
+    display: grid;
+    gap: 12px;
+    padding: 18px;
+  }
+
+  .address-input {
+    width: 100%;
+  }
+
+  .straving-address-input button {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+    padding: 18px 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .starving-bloc-bloc_1 {
+    margin-inline: 16px;
+  }
+
+  .starving-bloc-bloc_1 h1 {
+    font-size: clamp(36px, 12vw, 52px);
+  }
+
+  .starving-bloc-bloc_1 p {
+    font-size: 16px;
+  }
+
+  .starving-address ul {
+    flex-direction: column;
+  }
+
+  .starving-address ul li {
+    margin: 12px;
+    justify-content: center;
+  }
+
+  .straving-address-input {
+    padding: 12px;
+  }
+
+  .address-input input {
+    font-size: 14px;
+  }
+
+  .straving-address-input button {
+    font-size: 16px;
+  }
+}
+body {
+  overflow-x: hidden;
+}
