@@ -1,0 +1,146 @@
+.promo-grid {
+  display: flex;
+  gap: 16px;
+
+  justify-content: center;
+  margin-top: 80px;
+  margin-inline: 222.17px;
+}
+
+.promo-card {
+  display: grid;
+  gap: 32px;
+}
+
+.image-container {
+  display: grid;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  object-fit: cover;
+  width: 357px;
+  height: 301px;
+  border-radius: 16px;
+}
+.discount-badge {
+  padding: 10px 18px;
+  display: grid;
+  grid-template-columns: auto auto;
+  line-height: 1;
+  position: absolute;
+  border-radius: 0px 16px 0px 16px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffb30e;
+  color: white;
+  overflow: hidden;
+}
+
+.discount-badge-1 {
+  display: grid;
+}
+.bage-procent {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.bage-off {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.discount-badge h1 {
+  font-size: 68px;
+  font-weight: bold;
+}
+
+.card-content {
+  display: grid;
+  gap: 14px;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.timer-badge {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f17228;
+  background-color: #f1722834;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+@media (max-width: 1280px) {
+  .promo-grid {
+    margin-inline: 48px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .promo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .promo-card {
+    gap: 16px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 357 / 301;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo-grid {
+    margin-inline: 24px;
+    grid-template-columns: 1fr;
+  }
+
+  .card-content h3,
+  .timer-badge {
+    font-size: 18px;
+  }
+
+  .discount-badge h1 {
+    font-size: 52px;
+  }
+
+  .bage-procent {
+    font-size: 28px;
+  }
+
+  .bage-off {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-grid {
+    margin-inline: 16px;
+    margin-top: 48px;
+  }
+
+  .discount-badge {
+    padding: 8px 12px;
+  }
+
+  .card-content {
+    gap: 10px;
+  }
+
+  .timer-badge {
+    padding: 8px 12px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
